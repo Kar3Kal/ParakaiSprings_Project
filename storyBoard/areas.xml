@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="styles.css" type="text/css"?>
+<areas
+   xmlns="http://www.w3.org/2001/XMLSchema-instance">
+   <area>
+      <areaName>1- Isla Matanceros</areaName>
+      <cost>10.00</cost>
+      <status>false</status>
+      <capacity>50</capacity>
+      <image>area50.jpg</image>
+   </area>
+   <area>
+      <areaName>2- Mordor</areaName>
+      <cost>12.00</cost>
+      <status>false</status>
+      <capacity>20</capacity>
+      <image>area20a.jpg</image>
+   </area>
+   <area>
+      <areaName>3- District 9</areaName>
+      <cost>12.00</cost>
+      <status>false</status>
+      <capacity>20</capacity>
+      <image>area20b.jpg</image>
+   </area>
+   <area>
+      <areaName>4- Hogwarts</areaName>
+      <cost>15.00</cost>
+      <status>false</status>
+      <capacity>10</capacity>
+      <image>area10a.jpg</image>
+   </area>
+   <area>
+      <areaName>5- Plains of Silence</areaName>
+      <cost>18.00</cost>
+      <status>false</status>
+      <capacity>5</capacity>
+      <image>area10b.jpg</image>
+   </area>
+   <area>
+      <areaName>6- Olympus</areaName>
+      <cost>12.00</cost>
+      <status>true</status>
+      <capacity>20</capacity>
+      <image>areaReserved1.jpg</image>
+   </area>
+   <area>
+      <areaName>7- Corvo Bianco</areaName>
+      <cost>15.00</cost>
+      <status>true</status>
+      <capacity>10</capacity>
+      <image>areaReserved2.jpg</image>
+   </area>
+   <area>
+      <areaName>8- Rivia</areaName>
+      <cost>18.00</cost>
+      <status>true</status>
+      <capacity>5</capacity>
+      <image>areaReserved3.jpg</image>
+   </area>
+   <area>
+      <areaName>9- Skellige</areaName>
+      <cost>18.00</cost>
+      <status>true</status>
+      <capacity>5</capacity>
+      <image>areaReserved4.jpg</image>
+   </area>
+   <area>
+      <areaName>10- Vengerberg</areaName>
+      <cost>18.00</cost>
+      <status>true</status>
+      <capacity>5</capacity>
+      <image>areaReserved5.jpg</image>
+   </area>
+</areas>

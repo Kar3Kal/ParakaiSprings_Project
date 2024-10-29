@@ -1,0 +1,95 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87CEEB; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+    background: url('assets/pool-background.png') no-repeat center center;
+    background-size: cover;
+    border: 2px solid #000;
+    width: 800px;
+    height: 500px;
+}   
+
+#controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#timeSettings {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#scoreboard {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#score, #timeLeft {
+    margin: 5px 0;
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+dialog h1 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+dialog p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+dialog button {
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+dialog button:hover {
+    background-color: #218838;
+}

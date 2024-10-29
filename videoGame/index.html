@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimming Pool Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" tabindex="1">Your browser does not support canvas.</canvas>
+        <div id="controls">
+            <button id="startButton">Start Game</button>
+            <button id="restartButton">Restart Game</button>
+            <div id="timeSettings">
+                <label>
+                    <input type="radio" name="timeLimit" value="1" checked> 1 Minute
+                </label>
+                <label>
+                    <input type="radio" name="timeLimit" value="2"> 2 Minutes
+                </label>
+            </div>
+        </div>
+        <div id="scoreboard">
+            <p id="score">Score: 0</p>
+            <p id="timeLeft">Time Left: 60</p>
+        </div>
+    </div>
+
+    <!-- Introduce and Game Over Dialogs -->
+    <dialog id="introduceDialog">
+        <h1>Welcome to the Swimming Pool Game!</h1>
+        <p>Use arrow keys or W,A,S,D to move your character.<br>
+            Press space to collect toys.<br>
+            Collect as many toys as you can before time runs out!</p>
+        <button id="startGameButton">Start Game</button>
+    </dialog>
+
+    <dialog id="gameOverDialog">
+        <h1>Game Over!</h1>
+        <p>Your final score is: <span id="finalScore"></span></p>
+        <button id="restartGameButton">Restart</button>
+    </dialog>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

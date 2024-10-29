@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part1 StoryBoard</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation Pan -->
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../videoGame/index.html">Video Game</a>
+        <a href="../wireframes/index.html">Part 1 wireframe</a>
+        <a href="../dataDesign/index.html">Part 1 data design</a>
+    </nav>
+
+    <main>
+        <!-- Chick In, Check Out, Capacity and Search Tab -->
+        <header id="indexLayout">
+            <h3>Lodge Booking</h3>
+            <p>Description of lodges at Piha Holiday Lodge.</p>
+            <div id="header-Tab">
+                <label><i class="far fa-calendar"></i>Check In</label>
+                <input type="date" id="checkIn-Calander" />
+                <label><i class="far fa-calendar"></i>Check Out</label>
+                <input type="date" id="checkOut-Calander" />
+                <label><i class="fa-solid fa-person"></i>Capacity</label>
+                <input type="text" id="txtCapacity" />
+                <label><i class="fa-sharp fa-solid fa-magnifying-glass"></i></label>
+                <button class="btnSearch">Search</button>
+            </div>
+        </header>
+    </main>
+
+    <!-- Section 1 (Booking Details and Instrutions) -->
+    <section>
+        <div id="bookALodge">
+            <h3>Book a Lodge</h3>
+            <p>Instructions for how to use the booking system.
+                This could include:</p>
+            <ol>
+                <li>Set the Check In and Check Out dates</li>
+                <li>Enter capacity required</li>
+                <li>Hover over lodges to see details</li>
+                <li>Select an available lodge</li>
+                <li>Booking Guide</li>
+            </ol>
+            <p class="payment-methods">We accept:
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-paypal"></i>
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 2 (display Modal and Summary Modal) -->
+    <section>
+        <div class="background-Image">
+            <div class="main-Image">
+                <img src="./assets/WaterPark.jpg" alt="park map" />
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 id="modalTitle"></h2>
+                        <div id="divImage">
+                            <img id="modalImage" alt="area image">
+                        </div>
+                        <p id="modalCost"></p>
+                        <p id="modalCapacity"></p>
+                        <p id="modalStatus"></p>
+                        <p id="modalPaxs"></p>
+                        <p id="modalDuration"></p>
+                        <p id="modalTotalCost"></p>
+                        <button class="book">Submit</button>
+                        <button class="cancel">Cancel</button>
+                    </div>
+
+                    <div id="bookingSummaryModal" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close-summary">&times;</span>
+                            <h2>Booking Summary</h2>
+                            <p id="selectedArea"></p>
+                            <p id="arrivalDate"></p>
+                            <p id="leaveDate"></p>
+                            <p id="costPerDay"></p>
+                            <p id="totalCost"></p>
+                            <p id="maxCapacity"></p>
+                            <button class="ok">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="areaInfo" class="tooltip"></div>
+                <div class="hover-box area50_1" data-area="1- Isla Matanceros">1</div>
+                <div class="hover-box area20a_2" data-area="2- Mordor">2</div>
+                <div class="hover-box area20b_3" data-area="3- District 9">3</div>
+                <div class="hover-box area10a_4" data-area="4- Hogwarts">4</div>
+                <div class="hover-box area10b_5" data-area="5- Plains of Silence">5</div>
+                <div class="hover-box areaReserved1_6" data-area="6- Olympus">6</div>
+                <div class="hover-box areaReserved2_7" data-area="7- Corvo Bianco">7</div>
+                <div class="hover-box areaReserved3_8" data-area="8- Rivia">8</div>
+                <div class="hover-box areaReserved4_9" data-area="9- Skellige">9</div>
+                <div class="hover-box areaReserved5_10" data-area="10- Vengerberg">10</div>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+    <script src="./hover.js"></script>
+</body>
+
+</html>
